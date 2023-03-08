@@ -1,4 +1,4 @@
-# CodeClimate tests and status:
+### CodeClimate tests and status:
 [![Maintainability](https://api.codeclimate.com/v1/badges/008fa4405e3595b75dad/maintainability)](https://codeclimate.com/github/VadimYaskiv/python-project-49/maintainability)
 
 ### Hexlet tests and linter status:
