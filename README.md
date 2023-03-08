@@ -5,7 +5,7 @@
 [![Actions Status](https://github.com/VadimYaskiv/python-project-49/workflows/hexlet-check/badge.svg)](https://github.com/VadimYaskiv/python-project-49/actions)
 
 ### Linter test:
-![linter](https://github.com/VadimYaskiv/python-project-49/.github/workflows/linter/badge.svg?event=push)
+![linter](https://github.com/VadimYaskiv/python-project-49/.github/workflows/linter/badge.svg)
 
 ### brain-even asciinema
 <a href="https://asciinema.org/a/yytMX0rWYe862qeUfs5DGoOnJ" target="_blank"><img src="https://asciinema.org/a/yytMX0rWYe862qeUfs5DGoOnJ.svg" /></a>
