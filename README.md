@@ -5,7 +5,7 @@
 [![Actions Status](https://github.com/VadimYaskiv/python-project-49/workflows/hexlet-check/badge.svg)](https://github.com/VadimYaskiv/python-project-49/actions)
 
 # brain-even asciinema
-<script async id="asciicast-yytMX0rWYe862qeUfs5DGoOnJ" src="https://asciinema.org/a/yytMX0rWYe862qeUfs5DGoOnJ.js"></script>
+<a href="https://asciinema.org/a/yytMX0rWYe862qeUfs5DGoOnJ" target="_blank"><img src="https://asciinema.org/a/yytMX0rWYe862qeUfs5DGoOnJ.svg" /></a>
 
 # brain-calc asciinema
 <a href="https://asciinema.org/a/0765yYp6mL092OrvHlBBbo6TR" target="_blank"><img src="https://asciinema.org/a/0765yYp6mL092OrvHlBBbo6TR.svg" /></a>
