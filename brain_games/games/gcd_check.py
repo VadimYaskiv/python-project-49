@@ -11,7 +11,7 @@ def gen_quest_num():
     global second_div
     first_div = random.randint(1, 30)
     second_div = random.randint(1, 30)
-    quest_num = f'Question: {first_div, second_div}'
+    quest_num = f'{first_div} {second_div}'
     return quest_num
 
 
