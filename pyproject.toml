@@ -6,7 +6,7 @@ authors = ["Vadim <vadimyaskiv89@gmail.com>"]
 readme = "README.md"
 packages = [{include = "brain_games"}] 
 classifiers = [
-    "Topic :: Games/Entertainment"
+    "Topic :: Games/Entertainment",
     "Programming Language :: Python :: 3",
     "License :: Public Domain",
     "Operating System :: Unix",
