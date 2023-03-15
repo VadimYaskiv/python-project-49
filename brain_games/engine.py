@@ -1,8 +1,13 @@
 import prompt
+from brain_games.greeting import greet
+from brain_games.greeting import welcome_user
 import brain_games.greeting
 
 
-def game(gen_quest_num, gen_result):
+def game(gen_quest_num, gen_result, var_print):
+    greet()
+    welcome_user()
+    var_print()
 
     counter = 0
 
