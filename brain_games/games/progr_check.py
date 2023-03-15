@@ -2,7 +2,7 @@ import random
 
 
 def var_print():
-    print('What number is missing in the progression?')
+    return 'What number is missing in the progression?'
 
 
 def gen_quest_num():

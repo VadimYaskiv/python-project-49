@@ -3,7 +3,6 @@ from brain_games.games.progr_check import gen_quest_num
 from brain_games.games.progr_check import gen_result
 from brain_games.engine import game
 
-
 print('brain-progression\n')
 
 

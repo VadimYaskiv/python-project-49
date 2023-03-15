@@ -3,7 +3,6 @@ from brain_games.games.gcd_check import gen_quest_num
 from brain_games.games.gcd_check import gen_result
 from brain_games.engine import game
 
-
 print('brain-gcd\n')
 
 

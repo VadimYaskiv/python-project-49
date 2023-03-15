@@ -2,7 +2,7 @@ import random
 
 
 def var_print():
-    print('Answer "yes" if the number is even, otherwise answer "no".')
+    return 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
 def gen_quest_num():

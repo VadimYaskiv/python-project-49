@@ -3,7 +3,7 @@ import math
 
 
 def var_print():
-    print('Find the greatest common divisor of given numbers.')
+    return 'Find the greatest common divisor of given numbers.'
 
 
 def gen_quest_num():

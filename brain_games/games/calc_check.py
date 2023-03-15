@@ -2,7 +2,7 @@ import random
 
 
 def var_print():
-    print('What is the result of the expression?')
+    return 'What is the result of the expression?'
 
 
 def gen_quest_num():

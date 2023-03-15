@@ -7,7 +7,7 @@ import brain_games.greeting
 def game(gen_quest_num, gen_result, var_print):
     greet()
     welcome_user()
-    var_print()
+    print(var_print())
 
     counter = 0
 
