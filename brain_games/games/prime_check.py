@@ -5,13 +5,10 @@ def var_print():
     return 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
-def gen_quest_num():
+def quest_result():
     global quest_num
     quest_num = random.randint(1, 100)
-    return quest_num
 
-
-def gen_result():
     i = 2
     while i * i <= quest_num:
         if quest_num % i == 0:
@@ -21,4 +18,4 @@ def gen_result():
     else:
         result = 'yes'
 
-    return result
+    return quest_num, result

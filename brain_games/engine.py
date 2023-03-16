@@ -4,7 +4,7 @@ from brain_games.greeting import welcome_user
 import brain_games.greeting
 
 
-def game(gen_quest_num, gen_result, var_print):
+def game(quest_result, var_print):
     greet()
     welcome_user()
     print(var_print())
@@ -12,8 +12,7 @@ def game(gen_quest_num, gen_result, var_print):
     counter = 0
 
     while counter < 3:
-        quest_num = gen_quest_num()
-        result = gen_result()
+        quest_num, result = quest_result()
 
         print(f'Question: {quest_num}')
         answer = prompt.string('Your answer: ')
