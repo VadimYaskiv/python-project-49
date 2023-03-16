@@ -6,7 +6,6 @@ def var_print():
 
 
 def quest_result():
-    global change_num
     start_num = random.randint(1, 11)
     end_num = random.randint(50, 70)
     step = random.randint(2, 10)

@@ -6,7 +6,6 @@ def var_print():
 
 
 def quest_result():
-    global quest_num
     quest_num = random.randint(1, 100)
 
     i = 2

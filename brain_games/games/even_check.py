@@ -6,7 +6,6 @@ def var_print():
 
 
 def quest_result():
-    global quest_num
     quest_num = random.randint(1, 1000)
 
     if quest_num % 2 == 0:
