@@ -4,7 +4,8 @@ from brain_games.greeting import welcome_user
 import brain_games.greeting
 
 
-def game(quest_result, var_print):
+def game(quest_result, short_name, var_print):
+    print(short_name())
     greet()
     welcome_user()
     print(var_print())

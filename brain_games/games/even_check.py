@@ -1,6 +1,10 @@
 import random
 
 
+def short_name():
+    return 'brain-even\n'
+
+
 def var_print():
     return 'Answer "yes" if the number is even, otherwise answer "no".'
 
