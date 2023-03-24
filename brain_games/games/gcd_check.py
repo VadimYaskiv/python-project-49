@@ -2,10 +2,6 @@ import random
 import math
 
 
-def short_name():
-    return 'brain-gcd\n'
-
-
 def var_print():
     return 'Find the greatest common divisor of given numbers.'
 

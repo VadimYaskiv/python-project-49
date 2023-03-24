@@ -1,13 +1,11 @@
 import prompt
-from brain_games.greeting import greet
-from brain_games.greeting import welcome_user
-import brain_games.greeting
 
 
-def game(quest_result, short_name, var_print):
-    print(short_name())
-    greet()
-    welcome_user()
+def game(quest_result, var_print):
+    print('Welcome to the Brain Games!')
+    name = prompt.string('May I have your name? ')
+    print(f'Hello, {name}!')
+
     print(var_print())
 
     counter = 0
@@ -23,10 +21,10 @@ def game(quest_result, short_name, var_print):
         else:
             print(f"'{answer}' is wrong answer ;(. "
                   f"Correct answer was '{result}'.")
-            print(f"Let's try again, {brain_games.greeting.name}!")
+            print(f"Let's try again, {name}!")
             break
 
         if counter == 2:
-            print(f'Congratulations, {brain_games.greeting.name}!')
+            print(f'Congratulations, {name}!')
 
         counter += 1

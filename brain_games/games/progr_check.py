@@ -1,10 +1,6 @@
 import random
 
 
-def short_name():
-    return 'brain-progression\n'
-
-
 def var_print():
     return 'What number is missing in the progression?'
 

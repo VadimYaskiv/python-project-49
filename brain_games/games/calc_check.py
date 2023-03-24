@@ -1,10 +1,6 @@
 import random
 
 
-def short_name():
-    return 'brain-calc\n'
-
-
 def var_print():
     return 'What is the result of the expression?'
 
