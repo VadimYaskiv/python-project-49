@@ -7,7 +7,7 @@ def game_task():
 
 def members():
     INITIAL_TERM = random.randint(1, 11)
-    FINAL_TERM = random.randint(50, 70)
+    FINAL_TERM = random.randint(52, 70)
     COMMON_DIFF = random.randint(2, 10)
     return INITIAL_TERM, FINAL_TERM, COMMON_DIFF
 
