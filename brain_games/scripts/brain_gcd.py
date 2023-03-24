@@ -1,10 +1,9 @@
-from brain_games.games.gcd_check import var_print
-from brain_games.games.gcd_check import quest_result
+import brain_games.games.gcd_check
 from brain_games.engine import game
 
 
 def main():
-    game(quest_result, var_print)
+    game(brain_games.games.gcd_check)
 
 
 if __name__ == '__main__':
