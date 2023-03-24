@@ -11,7 +11,7 @@ def quest_num_f():
 
 
 def quest_result():
-    quest_num = quest_num_f() 
+    quest_num = quest_num_f()
 
     if quest_num % 2 == 0:
         result = 'yes'
