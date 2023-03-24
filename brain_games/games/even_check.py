@@ -1,21 +1,21 @@
 import random
 
 
-def var_print():
+def game_task():
     return 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
 def quest_num_f():
-    quest_num = random.randint(1, 1000)
-    return quest_num
+    QUEST_NUM = random.randint(1, 1000)
+    return QUEST_NUM
 
 
-def quest_result():
+def quest_answ_pair():
     quest_num = quest_num_f()
 
     if quest_num % 2 == 0:
-        result = 'yes'
+        right_answer = 'yes'
     else:
-        result = 'no'
+        right_answer = 'no'
 
-    return quest_num, result
+    return quest_num, right_answer

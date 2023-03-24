@@ -1,21 +1,21 @@
 import random
 
 
-def var_print():
+def game_task():
     return 'What is the result of the expression?'
 
 
-def quest_result():
-    first_var = random.randint(0, 10)
-    second_var = random.randint(0, 10)
-    operator = random.choice(['+', '-', '*'])
-    quest_num = f'{first_var} {operator} {second_var}'
+def quest_answ_pair():
+    FIRST_VAR = random.randint(0, 10)
+    SECOND_VAR = random.randint(0, 10)
+    OPERATOR = random.choice(['+', '-', '*'])
+    quest_num = f'{FIRST_VAR} {OPERATOR} {SECOND_VAR}'
 
-    if operator == '+':
-        result = first_var + second_var
-    elif operator == '-':
-        result = first_var - second_var
-    elif operator == '*':
-        result = first_var * second_var
+    if OPERATOR == '+':
+        right_answer = FIRST_VAR + SECOND_VAR
+    elif OPERATOR == '-':
+        right_answer = FIRST_VAR - SECOND_VAR
+    elif OPERATOR == '*':
+        right_answer = FIRST_VAR * SECOND_VAR
 
-    return quest_num, str(result)
+    return quest_num, str(right_answer)

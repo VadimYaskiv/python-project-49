@@ -2,15 +2,15 @@ import random
 import math
 
 
-def var_print():
+def game_task():
     return 'Find the greatest common divisor of given numbers.'
 
 
-def quest_result():
-    first_div = random.randint(1, 30)
-    second_div = random.randint(1, 30)
-    quest_num = f'{first_div} {second_div}'
+def quest_answ_pair():
+    FIRST_DIV = random.randint(1, 30)
+    SECOND_DIV = random.randint(1, 30)
+    quest_num = f'{FIRST_DIV} {SECOND_DIV}'
 
-    result = math.gcd(first_div, second_div)
+    right_answer = math.gcd(FIRST_DIV, SECOND_DIV)
 
-    return quest_num, str(result)
+    return quest_num, str(right_answer)
