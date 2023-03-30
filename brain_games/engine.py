@@ -8,9 +8,10 @@ def play(game_module):
 
     print(game_module.game_task())
 
-    NUM_OF_ROUNDS = 0
+    NUM_OF_ROUNDS = 3
+    i = 0
 
-    while NUM_OF_ROUNDS < 3:
+    while i < NUM_OF_ROUNDS:
         quest_num, right_answer = game_module.quest_answ_pair()
 
         print(f'Question: {quest_num}')
@@ -24,7 +25,7 @@ def play(game_module):
             print(f"Let's try again, {name}!")
             break
 
-        if NUM_OF_ROUNDS == 2:
+        if i == 2:
             print(f'Congratulations, {name}!')
 
-        NUM_OF_ROUNDS += 1
+        i += 1
