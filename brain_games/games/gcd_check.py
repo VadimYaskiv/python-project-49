@@ -7,10 +7,11 @@ def game_task():
 
 
 def quest_answ_pair():
-    FIRST_DIV = random.randint(1, 30)
-    SECOND_DIV = random.randint(1, 30)
-    quest_num = f'{FIRST_DIV} {SECOND_DIV}'
+    INTERVAL = (0, 30)
+    first_div = random.randint(INTERVAL[0], INTERVAL[1])
+    second_div = random.randint(INTERVAL[0], INTERVAL[1])
+    quest_num = f'{first_div} {second_div}'
 
-    right_answer = math.gcd(FIRST_DIV, SECOND_DIV)
+    right_answer = math.gcd(first_div, second_div)
 
     return quest_num, str(right_answer)

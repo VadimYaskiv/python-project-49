@@ -16,11 +16,12 @@ def is_prime(num):
 
 
 def quest_answ_pair():
-    QUEST_NUM = random.randint(1, 100)
+    INTERVAL = (0, 100)
+    quest_num = random.randint(INTERVAL[0], INTERVAL[1])
 
-    if is_prime(QUEST_NUM):
+    if is_prime(quest_num):
         right_answer = 'yes'
     else:
         right_answer = 'no'
 
-    return QUEST_NUM, right_answer
+    return quest_num, right_answer

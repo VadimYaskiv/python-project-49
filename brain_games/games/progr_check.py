@@ -6,10 +6,13 @@ def game_task():
 
 
 def progress():
-    INITIAL_TERM = random.randint(1, 11)
-    FINAL_TERM = random.randint(52, 70)
-    COMMON_DIFF = random.randint(2, 10)
-    progr = list(range(INITIAL_TERM, FINAL_TERM, COMMON_DIFF))
+    INIT = (1, 11)
+    FINAL = (52, 70)
+    DIFF = (2, 10)
+    initial_term = random.randint(INIT[0], INIT[1])
+    final_term = random.randint(FINAL[0], FINAL[1])
+    common_diff = random.randint(DIFF[0], DIFF[1])
+    progr = list(range(initial_term, final_term, common_diff))
     return progr
 
 

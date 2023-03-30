@@ -10,11 +10,12 @@ def is_even(num):
 
 
 def quest_answ_pair():
-    QUEST_NUM = random.randint(1, 1000)
+    INTERVAL = (0, 1000)
+    quest_num = random.randint(INTERVAL[0], INTERVAL[1])
 
-    if is_even(QUEST_NUM):
+    if is_even(quest_num):
         right_answer = 'yes'
     else:
         right_answer = 'no'
 
-    return QUEST_NUM, right_answer
+    return quest_num, right_answer

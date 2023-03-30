@@ -6,16 +6,17 @@ def game_task():
 
 
 def quest_answ_pair():
-    FIRST_VAR = random.randint(0, 10)
-    SECOND_VAR = random.randint(0, 10)
-    OPERATOR = random.choice(['+', '-', '*'])
-    quest_num = f'{FIRST_VAR} {OPERATOR} {SECOND_VAR}'
+    INTERVAL = (0, 10)
+    first_var = random.randint(INTERVAL[0], INTERVAL[1])
+    second_var = random.randint(INTERVAL[0], INTERVAL[1])
+    operator = random.choice(['+', '-', '*'])
+    quest_num = f'{first_var} {operator} {second_var}'
 
-    if OPERATOR == '+':
-        right_answer = FIRST_VAR + SECOND_VAR
-    elif OPERATOR == '-':
-        right_answer = FIRST_VAR - SECOND_VAR
-    elif OPERATOR == '*':
-        right_answer = FIRST_VAR * SECOND_VAR
+    if operator == '+':
+        right_answer = first_var + second_var
+    elif operator == '-':
+        right_answer = first_var - second_var
+    elif operator == '*':
+        right_answer = first_var * second_var
 
     return quest_num, str(right_answer)
