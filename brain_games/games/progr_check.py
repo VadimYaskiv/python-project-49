@@ -18,7 +18,8 @@ def progress():
 
 def quest_answ_pair():
     progr = progress()
-    change_num = random.choice(progr)
-    progr[progr.index(change_num)] = '..'
+    change_index = random.randrange(len(progr))
+    change_num = progr[change_index]
+    progr[change_index] = '..'
     quest_num = ' '.join(map(str, progr))
     return quest_num, str(change_num)
