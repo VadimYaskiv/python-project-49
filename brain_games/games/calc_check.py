@@ -5,8 +5,10 @@ def game_task():
     return 'What is the result of the expression?'
 
 
+INTERVAL = (0, 10)
+
+
 def quest_answ_pair():
-    INTERVAL = (0, 10)
     first_var = random.randint(INTERVAL[0], INTERVAL[1])
     second_var = random.randint(INTERVAL[0], INTERVAL[1])
     operator = random.choice(['+', '-', '*'])

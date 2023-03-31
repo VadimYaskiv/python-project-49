@@ -6,8 +6,10 @@ def game_task():
     return 'Find the greatest common divisor of given numbers.'
 
 
+INTERVAL = (0, 30)
+
+
 def quest_answ_pair():
-    INTERVAL = (0, 30)
     first_div = random.randint(INTERVAL[0], INTERVAL[1])
     second_div = random.randint(INTERVAL[0], INTERVAL[1])
     quest_num = f'{first_div} {second_div}'

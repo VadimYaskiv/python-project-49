@@ -5,19 +5,36 @@ def game_task():
     return 'What number is missing in the progression?'
 
 
-def progress():
-    INIT = (1, 11)
-    FINAL = (52, 70)
-    DIFF = (2, 10)
-    initial_term = random.randint(INIT[0], INIT[1])
-    final_term = random.randint(FINAL[0], FINAL[1])
-    common_diff = random.randint(DIFF[0], DIFF[1])
+INIT_TERM_INTERVAL = (1, 11)
+FINAL_TERM_INTERVAL = (52, 70)
+DIFF_INTERVAL = (2, 10)
+
+
+def initial_term():
+    initial_term = random.randint(*INIT_TERM_INTERVAL)
+    return initial_term
+
+
+def final_term():
+    final_term = random.randint(*FINAL_TERM_INTERVAL)
+    return final_term
+
+
+def common_diff():
+    common_diff = random.randint(*DIFF_INTERVAL)
+    return common_diff
+
+
+def make_progress(initial_term, final_term, common_diff):
+    initial_term = initial_term()
+    final_term = final_term()
+    common_diff = common_diff()
     progr = list(range(initial_term, final_term, common_diff))
     return progr
 
 
 def quest_answ_pair():
-    progr = progress()
+    progr = make_progress(initial_term, final_term, common_diff)
     change_index = random.randrange(len(progr))
     change_num = progr[change_index]
     progr[change_index] = '..'
