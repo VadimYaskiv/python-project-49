@@ -9,8 +9,8 @@ INTERVAL = (0, 10)
 
 
 def quest_answ_pair():
-    first_var = random.randint(INTERVAL[0], INTERVAL[1])
-    second_var = random.randint(INTERVAL[0], INTERVAL[1])
+    first_var = random.randint(*INTERVAL)
+    second_var = random.randint(*INTERVAL)
     operator = random.choice(['+', '-', '*'])
     quest_num = f'{first_var} {operator} {second_var}'
 

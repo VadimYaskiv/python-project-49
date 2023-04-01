@@ -1,3 +1,4 @@
+import math
 import random
 
 
@@ -6,24 +7,22 @@ def game_task():
 
 
 def is_prime(num):
-    i = 2
-    while i * i <= num:
+    if num < 2:
+        return False
+    for i in range(2, int(math.sqrt(num)) + 1):
         if num % i == 0:
             return False
-        i += 1
-    else:
-        return True
+    return True
 
 
 INTERVAL = (1, 100)
 
 
+def quest_num_func():
+    return random.randint(*INTERVAL)
+
+
 def quest_answ_pair():
-    quest_num = random.randint(INTERVAL[0], INTERVAL[1])
-
-    if is_prime(quest_num):
-        right_answer = 'yes'
-    else:
-        right_answer = 'no'
-
+    quest_num = quest_num_func()
+    right_answer = 'yes' if is_prime(quest_num) else 'no'
     return quest_num, right_answer

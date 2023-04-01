@@ -11,18 +11,15 @@ DIFF_INTERVAL = (2, 10)
 
 
 def initial_term():
-    initial_term = random.randint(*INIT_TERM_INTERVAL)
-    return initial_term
+    return random.randint(*INIT_TERM_INTERVAL)
 
 
 def final_term():
-    final_term = random.randint(*FINAL_TERM_INTERVAL)
-    return final_term
+    return random.randint(*FINAL_TERM_INTERVAL)
 
 
 def common_diff():
-    common_diff = random.randint(*DIFF_INTERVAL)
-    return common_diff
+    return random.randint(*DIFF_INTERVAL)
 
 
 def make_progress(initial_term, final_term, common_diff):
