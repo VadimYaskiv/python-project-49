@@ -1,5 +1,7 @@
 import prompt
 
+NUM_OF_ROUNDS = 3
+
 
 def play(game_module):
     print('Welcome to the Brain Games!')
@@ -8,7 +10,6 @@ def play(game_module):
 
     print(game_module.game_task())
 
-    NUM_OF_ROUNDS = 3
     i = 0
 
     while i < NUM_OF_ROUNDS:
