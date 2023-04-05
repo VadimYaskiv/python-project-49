@@ -8,18 +8,10 @@ def game_task():
 INTERVAL = (0, 10)
 
 
-def first_second_var():
-    return random.randint(*INTERVAL)
-
-
-def operator_choice():
-    return random.choice(['+', '-', '*'])
-
-
 def quest_answ_pair():
-    first_var = first_second_var()
-    second_var = first_second_var()
-    operator = operator_choice()
+    first_var = random.randint(*INTERVAL)
+    second_var = random.randint(*INTERVAL)
+    operator = random.choice(['+', '-', '*'])
     quest_num = f'{first_var} {operator} {second_var}'
 
     if operator == '+':

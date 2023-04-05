@@ -9,13 +9,9 @@ def game_task():
 INTERVAL = (0, 30)
 
 
-def first_second_div():
-    return random.randint(*INTERVAL)
-
-
 def quest_answ_pair():
-    first_div = first_second_div()
-    second_div = first_second_div()
+    first_div = random.randint(*INTERVAL)
+    second_div = random.randint(*INTERVAL)
     quest_num = f'{first_div} {second_div}'
 
     right_answer = math.gcd(first_div, second_div)

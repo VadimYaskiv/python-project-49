@@ -18,11 +18,7 @@ def is_prime(num):
 INTERVAL = (1, 100)
 
 
-def quest_num_func():
-    return random.randint(*INTERVAL)
-
-
 def quest_answ_pair():
-    quest_num = quest_num_func()
+    quest_num = random.randint(*INTERVAL)
     right_answer = 'yes' if is_prime(quest_num) else 'no'
     return quest_num, right_answer
